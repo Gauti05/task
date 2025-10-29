@@ -50,7 +50,6 @@ export default function Dashboard() {
         </button>
       </aside>
 
-      {/* Main content area */}
       <main className="flex-1 p-8 overflow-auto">
         <Outlet />
       </main>
