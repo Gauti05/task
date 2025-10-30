@@ -1,11 +1,12 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://task-1-2uej.onrender.com/api", 
-  headers: {
-    "Content-Type": "application/json",
-  },
+  baseURL: process.env.REACT_APP_BACKEND_URL + "/api",
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
+
 
 
 api.interceptors.request.use((config) => {
